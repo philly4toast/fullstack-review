@@ -5,6 +5,7 @@ app.use(express.static(__dirname + '/../client/dist'));
 
 app.post('/repos', function (req, res) {
   // TODO - your code here!
+  res.send('POST request to the homepage')
   // This route should take the github username provided
   // and get the repo information from the github API, then
   // save the repo information in the database
